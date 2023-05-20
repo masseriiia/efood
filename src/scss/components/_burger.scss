@@ -1,0 +1,119 @@
+//.nav-menu {
+//  display: none;
+//  width: 30px;
+//  height: 25px;
+//  justify-content: center;
+//  align-items: center;
+//  @include tablet-average {
+//    display: flex;
+//  }
+//
+//  &__burger {
+//    position: relative;
+//    width: 30px;
+//    height: 5px;
+//    background-color: black;
+//
+//    &::before, &::after {
+//      content: "";
+//      position: absolute;
+//      left: 0;
+//      width: 30px;
+//      height: 5px;
+//      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+//      background-color: black;
+//    }
+//
+//    &::before {
+//      top: -(5px * 2);
+//    }
+//
+//    &::after {
+//      top: 5px * 2;
+//    }
+//  }
+//}
+//
+//.nav-menu.nav-menu--active {
+//    position: fixed;
+//    top: 40px;
+//    right: 15px;
+//}
+//
+//.nav-menu.nav-menu--active .nav-menu__burger {
+//  background-color: transparent;
+//  color: black;
+//
+//  &::before, &::after {
+//    top: 0;
+//    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//    background-color: black;
+//  }
+//
+//  &::before {
+//    transform: rotate(45deg);
+//  }
+//
+//  &::after {
+//    transform: rotate(-45deg);
+//  }
+//}
+
+.nav-menu {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+
+  &__burger {
+    height: 4px;
+    width: 80%;
+    transform: scale(1);
+    background-color: black;
+  }
+  @include tablet-average {
+    display: flex;
+  }
+
+}
+
+.nav-menu::before, .nav-menu::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-menu::before {
+  top: 0;
+}
+
+.nav-menu::after {
+  bottom: 0;
+}
+
+.nav-menu.active .nav-menu__burger {
+  transform: scale(0);
+}
+
+.nav-menu.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+  background-color: #FFFFFF;
+}
+
+.nav-menu.active::after {
+  top: 40%;
+  transform: rotate(45deg) translate(0, 60%);
+  background-color: #FFFFFF;
+}
+
+.open {
+  display: flex !important;
+  justify-content: center;
+}

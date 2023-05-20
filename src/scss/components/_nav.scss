@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    &-link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #363853;
+      @include tablet-average {
+        color: #FFFFFF;
+        font-size: 24px;
+      }
+
+      &:hover {
+        color: #FF6838;
+        transition: 0.3s ;
+      }
+    }
+  }
+  @include tablet-average {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

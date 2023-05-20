@@ -1,6 +1,13 @@
 .header {
   padding-top: 54px;
   padding-bottom: 54px;
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -8,29 +15,14 @@
     justify-content: space-between;
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-  }
+  &__info {
+      display: flex;
+      gap: 60px;
+      margin-left: 60px;
 
-  &__list {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 60px;
-  }
-
-
-  &__item a {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #363853;
-
-    &:hover {
-      color: #FF6838;
-      transition: 0.3s ;
+    @include tablet-average {
+      display: none;
     }
   }
+
 }
