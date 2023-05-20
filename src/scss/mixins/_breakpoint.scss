@@ -16,6 +16,11 @@
   @media (max-width: (1024px)) {
     @content;
   }
+
+}@mixin tablet-average {
+  @media (max-width: (974px)) {
+    @content;
+  }
 }
 
 @mixin small-tablet {
