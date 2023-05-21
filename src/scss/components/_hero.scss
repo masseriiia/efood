@@ -1,0 +1,94 @@
+.hero {
+  padding-top: 21px;
+  padding-bottom: 62px;
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include tablet-average {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__info {
+    max-width: 530px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 78px;
+    text-transform: capitalize;
+    color: #363853;
+
+    @include tablet {
+      font-size: 62px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: 56px;
+    }
+
+    @include mobile-average {
+      font-size: 43px;
+      line-height: 44px;
+    }
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #363853;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @include mobile-average {
+      font-size: 14px;
+    }
+  }
+
+  &__get {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    @include mobile-average {
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+
+    @include mobile-small {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__down {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #363853;
+  }
+}
