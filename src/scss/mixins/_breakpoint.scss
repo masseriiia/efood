@@ -34,3 +34,14 @@
     @content;
   }
 }
+
+@mixin mobile-average {
+  @media (max-width: (425px)) {
+    @content;
+  }
+
+}@mixin mobile-small {
+  @media (max-width: (338px)) {
+    @content;
+  }
+}
