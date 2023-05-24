@@ -1,0 +1,53 @@
+.swiper {
+  max-width: 1154px;
+}
+
+.my-swiper {
+}
+
+.swiper-slide {
+}
+
+.swiper-navigator {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.swiper-button-prev {
+  cursor: pointer;
+  color: #FF7A50;
+
+}.swiper-button-next {
+   cursor: pointer;
+  color: #FF7A50;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF7A50;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  z-index: -1;
+  bottom: 13px;
+}
+
+
+//position: absolute;
+//top: 50%;
+//       width: calc(var(--swiper-navigation-size) / 44 * 27);
+//height: var(--swiper-navigation-size);
+//margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+//z-index: 10;
+//cursor: pointer;
+//display: -webkit-box;
+//display: -ms-flexbox;
+//display: flex;
+//-webkit-box-align: center;
+//-ms-flex-align: center;
+//align-items: center;
+//-webkit-box-pack: center;
+//-ms-flex-pack: center;
+//justify-content: center;
+//color: var(--swiper-navigation-color, var(--swiper-theme-color));
