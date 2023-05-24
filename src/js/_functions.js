@@ -52,8 +52,24 @@ console.log(mobileCheck())
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
+// const swiper = new Swiper('.swiper', {
 //   slidesPerView: 'auto',
+//   direction: 'horizontal',
+//
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
 // });
 
 // Подключение анимаций по скроллу
