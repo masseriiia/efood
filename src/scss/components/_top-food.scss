@@ -1,0 +1,85 @@
+.top-food {
+  padding-bottom: 165px;
+
+  @include tablet {
+    padding-bottom: 136px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 112px;
+  }
+
+  @include mobile {
+    padding-bottom: 80px;
+  }
+
+  @include mobile-average {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #363853;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 43px;
+  }
+
+}
+
+.restaurant-item {
+  background: #FFFFFF;
+  border-radius: 53px 5px;
+
+  &__descr {
+    padding: 22px 20px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #363853;
+  }
+
+  &__times {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__img {
+    width: 22px;
+    height: 22px;
+  }
+
+  &__time {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #363853;
+    opacity: 0.9;
+  }
+
+  &__button {
+    padding: 5px 28px;
+    border-radius: 20px 20px 0px 20px;
+  }
+}
