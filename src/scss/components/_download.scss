@@ -1,0 +1,69 @@
+.download {
+  padding-bottom: 166px;
+
+  @include tablet {
+    padding-bottom: 136px;
+  }
+
+  @include tablet-average {
+    padding-bottom: 112px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 48px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include average-desktop {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__info {
+    max-width: 538px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #363853;
+
+    @include small-tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #363853;
+    opacity: 0.9;
+
+    @include small-tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 35px;
+
+    @include tablet-average {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+}
