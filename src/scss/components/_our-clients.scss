@@ -1,0 +1,133 @@
+.our-clients {
+  padding-bottom: 124px;
+  &__inner {
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+
+    @include average-desktop {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #363853;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+}
+
+.client-item {
+  margin-top: 100px;
+  position: relative;
+  max-width: 573px;
+
+  @include average-desktop {
+    margin-top: 0;
+  }
+
+  @include small-tablet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    color: #363853;
+
+    @include small-tablet {
+      font-size: 16px;
+      line-height: 35px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF7A50;
+
+    @include small-tablet {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    @include mobile-average {
+      margin-bottom: 8px;
+    }
+
+    @include mobile-small {
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+  }
+
+  &__status {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #AAAAAA;
+
+    @include mobile-average {
+      font-size: 12px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 44px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0%;
+    left: -7%;
+    background-image: url("../../img/svg/quote-1.svg");
+    background-repeat: no-repeat;
+    @include mobile-average {
+      top: -3%;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: -7%;
+    bottom: 20%;
+    background-image: url("../../img/svg/quote-2.svg");
+    background-repeat: no-repeat;
+
+    @include mobile-average {
+      bottom: 17%;
+    }
+  }
+}
