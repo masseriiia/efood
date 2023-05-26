@@ -1,18 +1,6 @@
 .delivery {
-  padding-top: 100px;
   padding-bottom: 120px;
 
-  @include tablet {
-    padding-top: 80px;
-  }
-
-  @include small-tablet {
-    padding-top: 60px;
-  }
-
-  @include mobile-average {
-    padding-top: 40px;
-  }
 
   &__inner {
     display: flex;
@@ -68,12 +56,12 @@
 
 .delivery-condition {
   display: flex;
-  //align-items: center;
   gap: 25px;
 
   &__img {
     width: 34px;
     height: 34px;
+
   }
 
   &__text {
