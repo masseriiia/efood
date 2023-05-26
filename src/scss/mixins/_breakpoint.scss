@@ -35,12 +35,19 @@
   }
 }
 
+@mixin mobile-above-average {
+  @media (max-width: (516px)) {
+    @content;
+  }
+}
+
 @mixin mobile-average {
   @media (max-width: (425px)) {
     @content;
   }
+}
 
-}@mixin mobile-small {
+@mixin mobile-small {
   @media (max-width: (338px)) {
     @content;
   }

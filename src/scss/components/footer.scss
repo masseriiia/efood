@@ -1,0 +1,195 @@
+.footer {
+  padding-bottom: 36px;
+
+
+  &__wrapper {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 116px;
+
+    @include tablet {
+      gap: 96px;
+    }
+
+    @include tablet-average {
+      gap: 76px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      gap: 56px;
+    }
+
+    @include mobile {
+      gap: 36px;
+    }
+  }
+
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+
+  @include small-tablet {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    @include small-tablet {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 29px;
+  }
+
+  &__place {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    //text-align: center;
+    line-height: 32px;
+    color: #37383D;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #37383D;
+
+    @include small-tablet {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #37383D;
+
+    @include small-tablet {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 13px;
+    @include small-tablet {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    background-color: #e3e3e3;
+    border-radius: 21px;
+
+
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 99px;
+
+  @include tablet {
+    gap: 82px;
+  }
+
+  @include tablet-average {
+    gap: 69px;
+  }
+
+  @include small-tablet {
+    flex-direction: column;
+    justify-content: center;
+    gap: 46px;
+  }
+
+  @include mobile {
+    gap: 28px;
+  }
+
+  @include small-tablet {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    color: #37383D;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    color: #37383D;
+  }
+}
+
+.footer-button {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
+
+  @include mobile-above-average {
+    justify-content: center;
+  }
+
+  &__created {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #646464
+  }
+
+  &__rules {
+    display: flex;
+    gap: 51px;
+  }
+
+  &__rule {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #646464
+  }
+}
