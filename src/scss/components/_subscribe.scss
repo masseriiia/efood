@@ -1,0 +1,127 @@
+.subscribe {
+  padding-bottom: 121px;
+  &__wrapper {
+    padding: 56px 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF7A50;
+    border-radius: 11px;
+    background-image: url("../../img/subscribe/form-bg.png");
+    background-position:  bottom -6% right 22%;
+    background-repeat: no-repeat;
+
+    @include big-desktop {
+      padding: 56px 135px;
+    }
+
+    @include tablet {
+      padding: 56px 105px;
+    }
+
+    @include small-tablet {
+      padding: 56px 78px;
+    }
+
+    @include mobile {
+      padding: 56px 20px;
+    }
+
+    @include mobile-average {
+      padding: 56px 5px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+
+    @include tablet {
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+
+    @include tablet {
+      line-height: 17px;
+    }
+  }
+}
+
+.subscribe-form {
+
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  &__input {
+    display: block;
+    padding: 24px 43px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #363853;
+    opacity: 0.9;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    background-color: #FFFFFF;
+
+    @include small-tablet {
+      padding: 24px 32px;
+      font-size: 16px;
+    }
+
+    @include mobile {
+      padding: 20px 26px;
+      font-size: 14px;
+    }
+
+    @include mobile-average {
+      padding: 18px 18px;
+    }
+
+    @include mobile-small {
+      padding: 18px 12px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    padding: 17px 33px;
+    right: 1%;
+    bottom: 13%;
+    border-radius: 70px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    @include mobile {
+      padding: 14px 24px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    @include mobile-average {
+      padding: 14px 18px;
+    }
+
+    @include mobile-small {
+      padding: 12px 10px;
+    }
+  }
+}
