@@ -18,7 +18,7 @@
   }
 
 }@mixin tablet-average {
-  @media (max-width: (974px)) {
+  @media (max-width: (984px)) {
     @content;
   }
 }

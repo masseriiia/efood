@@ -18,7 +18,7 @@
     line-height: 43px;
     letter-spacing: 0.5px;
     text-align: center;
-    color: #363853;
+    color: var(--navy-blue);
 
     @include mobile {
       font-size: 32px;
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 45px;
     letter-spacing: 0.5px;
-    color: #363853;
+    color: var(--navy-blue);
 
     @include small-tablet {
       font-size: 16px;

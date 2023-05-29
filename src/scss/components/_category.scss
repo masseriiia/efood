@@ -14,7 +14,7 @@
     font-size: 36px;
     line-height: 43px;
     text-transform: capitalize;
-    color: #363853;
+    color: var(--navy-blue);
   }
 
   &__tab {
@@ -33,7 +33,7 @@
   display: flex;
   gap: 8px;
   width: 208px;
-  background: #FFFFFF;
+  background: var(--light-color);
   border-radius: 8px;
   cursor: pointer;
 
@@ -47,14 +47,14 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #363853;
+    color: var(--navy-blue);
 
   }
 
   &__img {
     width: 44px;
     height: 44px;
-    fill: white;
+    fill: var(--light-color);
 
   }
 
@@ -63,7 +63,7 @@
 .item-food {
   padding: 32px 2px;
   width: 208px;
-  background: #FFFFFF;
+  background: var(--light-color);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    color: #363853;
+    color: var(--navy-blue);
   }
 
   &__image {
@@ -95,7 +95,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #363853;
+    color: var(--navy-blue);
   }
 }
 

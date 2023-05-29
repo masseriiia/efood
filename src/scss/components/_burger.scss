@@ -43,13 +43,13 @@
 .nav-menu.active::before {
   top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
-  background-color: #FFFFFF;
+  background-color: var(--light-color);
 }
 
 .nav-menu.active::after {
   top: 40%;
   transform: rotate(45deg) translate(0, 60%);
-  background-color: #FFFFFF;
+  background-color: var(--light-color);
 }
 
 .open {

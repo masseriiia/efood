@@ -24,7 +24,7 @@
     font-size: 66px;
     line-height: 78px;
     text-transform: capitalize;
-    color: #363853;
+    color: var(--navy-blue);
 
     @include tablet {
       font-size: 62px;
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
-    color: #363853;
+    color: var(--navy-blue);
 
     @include tablet {
       font-size: 18px;
@@ -90,6 +90,6 @@
     line-height: 24px;
     text-align: center;
     text-decoration-line: underline;
-    color: #363853;
+    color: var(--navy-blue);
   }
 }
