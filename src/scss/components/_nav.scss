@@ -9,9 +9,11 @@
     gap: 60px;
 
     &-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-weight: 400;
       font-size: 18px;
-      line-height: 21px;
+      line-height: 1.16;
       color: var(--navy-blue);
       @include tablet-average {
         color: var(--light-color);

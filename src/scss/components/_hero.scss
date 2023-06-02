@@ -22,7 +22,7 @@
   &__title {
     font-weight: 500;
     font-size: 66px;
-    line-height: 78px;
+    line-height: 1.2;
     text-transform: capitalize;
     color: var(--navy-blue);
 
@@ -44,7 +44,7 @@
   &__descr {
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-transform: capitalize;
     color: var(--navy-blue);
 
@@ -87,7 +87,7 @@
   &__down {
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     text-align: center;
     text-decoration-line: underline;
     color: var(--navy-blue);

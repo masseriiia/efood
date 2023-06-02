@@ -46,7 +46,11 @@
   }
 
   &__button {
-    color: #363853;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--navy-blue);
   }
 
 }
