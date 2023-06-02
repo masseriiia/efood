@@ -34,9 +34,9 @@
   &__title {
     font-weight: 500;
     font-size: 36px;
-    line-height: 50px;
+    line-height: 1.38;
     text-transform: capitalize;
-    color: #363853;
+    color: var(--navy-blue);
 
     @include small-tablet {
       font-size: 32px;
@@ -47,8 +47,8 @@
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
-    color: #363853;
+    line-height: 1.5;
+    color: var(--navy-blue);
     opacity: 0.9;
 
     @include small-tablet {
@@ -64,6 +64,10 @@
       justify-content: center;
       gap: 20px;
     }
+  }
+
+  &__link {
+    display: flex;
   }
 
 }

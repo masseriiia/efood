@@ -37,9 +37,9 @@
     margin-bottom: 12px;
     font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.17;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--light-color);
 
     @include tablet {
       font-size: 36px;
@@ -50,9 +50,9 @@
     margin-bottom: 31px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--light-color);
     opacity: 0.8;
 
     @include tablet {
@@ -72,14 +72,14 @@
     width: 100%;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
-    color: #363853;
+    line-height: 1.66;
+    color: var(--navy-blue);
     opacity: 0.9;
     border-radius: 70px;
     border: none;
     outline: none;
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
-    background-color: #FFFFFF;
+    background-color: var(--light-color);
 
     @include small-tablet {
       padding: 24px 32px;

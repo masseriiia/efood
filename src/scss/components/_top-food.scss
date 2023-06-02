@@ -21,10 +21,10 @@
     margin-bottom: 50px;
     font-weight: 500;
     font-size: 36px;
-    line-height: 30px;
+    line-height: 0.8;
     text-align: center;
     text-transform: capitalize;
-    color: #363853;
+    color: var(--navy-blue);
   }
 
   &__inner {
@@ -38,7 +38,7 @@
 }
 
 .restaurant-item {
-  background: #FFFFFF;
+  background-color: var(--light-color);
   border-radius: 53px 5px;
 
   &__descr {
@@ -55,8 +55,8 @@
     margin-bottom: 14px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 30px;
-    color: #363853;
+    line-height: 1.25;
+    color: var(--navy-blue);
   }
 
   &__times {
@@ -73,13 +73,18 @@
   &__time {
     font-weight: 300;
     font-size: 18px;
-    line-height: 30px;
-    color: #363853;
+    line-height: 1.66;
+    color: var(--navy-blue);
     opacity: 0.9;
   }
 
   &__button {
     padding: 5px 28px;
     border-radius: 20px 20px 0px 20px;
+
+    &:hover {
+      background-color: #ee4a11;
+      transition: 0.3s;
+    }
   }
 }

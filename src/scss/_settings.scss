@@ -1,9 +1,15 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
-  background-color: #EEEEEE
+  background-color: #EEEEEE;
+  padding-top: var(--header-height);
+}
+body.is-locked {
+  overflow: hidden;
 }
 
 *,
@@ -30,7 +36,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow-x: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
 .is-hidden {
@@ -42,7 +48,26 @@ a {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    color: #FF6838;
+    transition: 0.4s;
+  }
 }
+
+.color-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    transition: 0.4s;
+  }
+}
+
+
 
 .list-reset {
   list-style: none;
@@ -55,7 +80,7 @@ a {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  background-color: var(--light-color);
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -106,4 +131,22 @@ a {
 
 .text-color {
   color: #FF7A50;
+}
+
+
+svg {
+  --fillColor: transparent;
+  --strokeColor: currentColor;
+}
+
+.fill-color {
+  --fillColor: currentColor;
+  --strokeColor: transparent;
+}
+
+
+svg * {
+  fill: var(--fillColor);
+  stroke: var(--strokeColor);
+
 }

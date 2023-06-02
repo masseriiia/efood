@@ -27,6 +27,13 @@
     }
   }
 
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-style: normal;
+  }
+
 }
 
 .footer-info {
@@ -58,8 +65,7 @@
     margin: 0;
     font-weight: 400;
     font-size: 16px;
-    //text-align: center;
-    line-height: 32px;
+    line-height: 2;
     color: #37383D;
   }
 
@@ -69,7 +75,7 @@
     gap: 7px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 2;
     color: #37383D;
 
     @include small-tablet {
@@ -84,7 +90,7 @@
     gap: 7px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 2;
     color: #37383D;
 
     @include small-tablet {
@@ -96,6 +102,7 @@
   &__socials {
     display: flex;
     gap: 13px;
+
     @include small-tablet {
       text-align: center;
       justify-content: center;
@@ -108,9 +115,9 @@
     justify-content: center;
     width: 39px;
     height: 39px;
+    color: #363853;
     background-color: #e3e3e3;
     border-radius: 21px;
-
 
   }
 }
@@ -149,7 +156,7 @@
     margin: 0;
     font-weight: 500;
     font-size: 18px;
-    line-height: 49px;
+    line-height: 2.7;
     letter-spacing: 0.01em;
     color: #37383D;
   }
@@ -157,9 +164,13 @@
   &__link {
     font-weight: 400;
     font-size: 18px;
-    line-height: 49px;
+    line-height: 2.7;
     letter-spacing: 0.01em;
     color: #37383D;
+
+    &:hover {
+      color: #FF6838;
+    }
   }
 }
 
@@ -177,19 +188,24 @@
   &__created {
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
     color: #646464
   }
 
   &__rules {
     display: flex;
+    align-items: center;
     gap: 51px;
   }
 
   &__rule {
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
-    color: #646464
+    line-height: 1;
+    color: #646464;
+
+    &:hover {
+      color: #FF6838;
+    }
   }
 }

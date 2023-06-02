@@ -1,7 +1,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
-
-
 Swiper.use([Navigation, Pagination]);
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   slidesPerView: 5,
@@ -30,7 +29,6 @@ const swiper = new Swiper('.swiper', {
     }
   },
 
-
   pagination: {
     el: '.swiper-pagination',
   },
@@ -40,5 +38,28 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-slide-button-next',
     prevEl: '.swiper-slide-button-prev',
   },
-
 });
+
+const initCatalogSlider = () => {
+  const selectors = {
+    root: '[data-js-catalog-slider]',
+    slide: '[data-js-catalog-slider-slide]',
+    prevButton: '[data-js-catalog-slider-prev-button]',
+    nextButton: '[data-js-catalog-slider-next-button]',
+  }
+
+  new Swiper(selectors.root, {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
+
+    navigation: {
+      nextEl: selectors.nextButton,
+      prevEl: selectors.prevButton,
+    },
+  });
+}
+
+initCatalogSlider()
+
+
