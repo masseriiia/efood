@@ -1,6 +1,26 @@
 .header {
   padding-top: 54px;
   padding-bottom: 54px;
+  position: fixed;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #EEEEEE;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+
+  @include tablet {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    height: 120px;
+  }
+
+  @include small-tablet {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    height: 90px;
+  }
 
   &__navigation {
     display: flex;
@@ -23,6 +43,10 @@
     @include tablet-average {
       display: none;
     }
+  }
+
+  &__button {
+    color: #363853;
   }
 
 }

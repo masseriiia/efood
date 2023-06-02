@@ -96,6 +96,7 @@
   &__socials {
     display: flex;
     gap: 13px;
+
     @include small-tablet {
       text-align: center;
       justify-content: center;
@@ -108,9 +109,9 @@
     justify-content: center;
     width: 39px;
     height: 39px;
+    color: #363853;
     background-color: #e3e3e3;
     border-radius: 21px;
-
 
   }
 }
@@ -160,6 +161,10 @@
     line-height: 49px;
     letter-spacing: 0.01em;
     color: #37383D;
+
+    &:hover {
+      color: #FF6838;
+    }
   }
 }
 
@@ -190,6 +195,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    color: #646464
+    color: #646464;
+
+    &:hover {
+      color: #FF6838;
+    }
   }
 }

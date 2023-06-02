@@ -112,8 +112,11 @@
     left: -7%;
     background-image: url("../../img/svg/quote-1.svg");
     background-repeat: no-repeat;
+    @include small-tablet {
+      left: -4%;
+    }
     @include mobile-average {
-      top: -3%;
+      top: 1%;
     }
   }
   &:after {
@@ -121,8 +124,8 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    right: -7%;
-    bottom: 20%;
+    right: -6%;
+    bottom: 16%;
     background-image: url("../../img/svg/quote-2.svg");
     background-repeat: no-repeat;
 

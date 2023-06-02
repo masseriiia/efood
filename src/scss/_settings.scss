@@ -1,10 +1,15 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
-  background-color: #EEEEEE
+  background-color: #EEEEEE;
+  padding-top: var(--header-height);
+}
+body.is-locked {
+  overflow: hidden;
 }
 
 *,
@@ -43,7 +48,26 @@ a {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    color: #FF6838;
+    transition: 0.4s;
+  }
 }
+
+.color-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    transition: 0.4s;
+  }
+}
+
+
 
 .list-reset {
   list-style: none;
@@ -107,4 +131,22 @@ a {
 
 .text-color {
   color: #FF7A50;
+}
+
+
+svg {
+  --fillColor: transparent;
+  --strokeColor: currentColor;
+}
+
+.fill-color {
+  --fillColor: currentColor;
+  --strokeColor: transparent;
+}
+
+
+svg * {
+  fill: var(--fillColor);
+  stroke: var(--strokeColor);
+
 }

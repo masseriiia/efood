@@ -10,13 +10,19 @@
   justify-content: center;
 }
 
-
-
 .swiper-navigator {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   gap: 90px;
+}
+
+.swiper-slide-button-prev {
+  color: #D1D2DC;
+}
+
+.swiper-slide-button-next {
+  color: #D1D2DC;
 }
 
 .swiper-button-prev {
@@ -36,9 +42,40 @@
   display: flex;
   justify-content: center;
   z-index: -1;
-  bottom: 13px;
+  bottom: 17px;
 }
 
+.our-clients-swiper {
+  max-width: 661px;
+  @include small-tablet {
+    max-width: 480px;
+  }
+
+  @include mobile-above-average {
+    max-width: 380px;
+  }
+
+  @include mobile-average {
+    max-width: 320px;
+  }
+}
+.our-clients-swiper-navigator {
+  display: flex;
+  justify-content: flex-end;
+  gap: 44px;
+  margin-top: -5%;
+  margin-right: 44px;
+  z-index: 100;
+}
+
+.slider-button-prev {
+  color: #7B7B7B;
+  z-index: 100;
+}
+.slider-button-next {
+  color: #7B7B7B;
+  z-index: 100;
+}
 
 //position: absolute;
 //top: 50%;
