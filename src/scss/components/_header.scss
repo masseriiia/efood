@@ -37,6 +37,7 @@
 
   &__info {
       display: flex;
+      align-items: center;
       gap: 60px;
       margin-left: 60px;
 
@@ -51,6 +52,11 @@
     padding-left: 10px;
     padding-right: 10px;
     color: var(--navy-blue);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
   }
 
 }
