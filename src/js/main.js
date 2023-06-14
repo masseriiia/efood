@@ -5,3 +5,4 @@ import './components/burger';
 import './components/tabs';
 import './components/swiper';
 import './components/quick-search';
+import './components/buy';

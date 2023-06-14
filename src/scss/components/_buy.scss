@@ -1,0 +1,55 @@
+.buy {
+  position: relative;
+
+  &__toggle-button {
+    color: var(--navy-blue);
+  }
+
+  &__tooltip {
+    position: absolute;
+    width: 262px;
+    top: -12px;
+    left: 80px;
+    background-color: gainsboro;
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+
+  &__close-button {
+    font-weight: 700;
+  }
+
+  &__result-list {
+    padding-left: 10px;
+    padding-right: 5px;
+    list-style: none;
+
+    &:empty {
+      display: none;
+    }
+  }
+}
+
+.buy-list {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.buy-result {
+  font-weight: 400;
+}
+
+.buy-title {
+  text-align: center;
+  font-weight: 500;
+}
